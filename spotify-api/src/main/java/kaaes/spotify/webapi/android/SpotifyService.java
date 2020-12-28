@@ -1830,6 +1830,9 @@ public interface SpotifyService {
     CurrentlyPlaying getCurrentlyPlaying(@Query("market") String market);
 
 
+    @GET("/me/player/currently-playing")
+    CurrentlyPlaying getCurrentlyPlaying2(@Query("market") String market);
+
     /**
      * Skip forward to the next track
      */
