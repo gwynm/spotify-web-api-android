@@ -1828,4 +1828,12 @@ public interface SpotifyService {
      */
     @GET("/me/player/currently-playing")
     CurrentlyPlaying getCurrentlyPlaying(@Query("market") String market);
+
+
+    /**
+     * Skip forward to the next track
+     */
+    @POST("/me/player/next")
+    void skipToNextTrack();
+
 }
